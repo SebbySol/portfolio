@@ -694,7 +694,7 @@
     flex: 1 1 auto;
     background: var(--bg-color);
     margin-top: 0;
-    max-height: 40vh;
+    max-height: 60vh;
     box-sizing: border-box;
   }
   .modal-title {
