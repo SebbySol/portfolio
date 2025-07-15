@@ -654,6 +654,7 @@
     align-items: stretch;
     overflow: hidden;
     max-height: 95vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     background: var(--bg-color);
@@ -667,6 +668,7 @@
     flex-direction: column;
     background: transparent;
     padding: 0;
+    flex: 1 1 0;
   }
   .modal-image {
     width: 100%;
@@ -691,10 +693,9 @@
     width: 100%;
     padding: 1.25rem 1rem;
     overflow-y: auto;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     background: var(--bg-color);
     margin-top: 0;
-    max-height: calc(95vh - 40vw); /* 40vw is a rough estimate for image height */
     box-sizing: border-box;
   }
   .modal-title {
