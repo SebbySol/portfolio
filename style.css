@@ -103,41 +103,44 @@
     }
     .nav-menu {
       position: fixed;
-      top: 0;
-      right: 0;
-      width: 80vw;
-      max-width: 320px;
-      height: 100vh;
+      top: 60px;
+      right: 1rem;
+      width: auto;
+      min-width: unset;
+      max-width: 95vw;
+      height: auto;
       background: var(--bg-color);
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding-top: 4rem;
-      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
       z-index: 2001;
-      border-radius: 0;
-      transform: translateX(100%);
+      border-radius: 12px;
+      transform: translateY(0);
       opacity: 0;
       pointer-events: none;
-      transition: transform 0.3s, opacity 0.3s;
-      overflow-y: auto;
+      transition: opacity 0.3s, transform 0.3s;
+      overflow: visible;
+      gap: 2rem;
     }
     .nav-menu.active {
-      transform: translateX(0);
       opacity: 1;
       pointer-events: auto;
+      transform: translateY(0);
     }
     body.menu-open {
       overflow: hidden;
     }
     .nav-menu a {
-      margin: 1rem 0 1rem;
+      margin: 0;
       font-size: 1.1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.75rem;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      width: 100%;
+      width: auto;
       text-align: center;
+      display: inline-block;
     }
     .nav-menu a:hover {
       background-color: var(--section-bg);
