@@ -109,7 +109,7 @@
       min-width: unset;
       max-width: 95vw;
       height: auto;
-      background: var(--bg-color);
+      background: #1a2339;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -538,10 +538,26 @@
   position: absolute;
   top: 16px;
   right: 24px;
-  font-size: 2rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #232b43;
+  border-radius: 6px;
+  font-size: 1.7rem;
   color: var(--text-color);
+  font-weight: bold;
   cursor: pointer;
   z-index: 10;
+  border: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.modal-close:hover {
+  background: #2d3756;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(89, 78, 208, 0.18);
 }
 .modal-body {
   display: flex;
